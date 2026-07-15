@@ -2,7 +2,7 @@
 
 A minimal, runnable reference app that turns a non-disclosure agreement (NDA) stored in Box into a **Deal Risk Summary**, and writes that summary back to Box as a companion file.
 
-It takes a reliable, repeatable approach: **extract, don't prompt.** Instead of asking a model open-ended questions, it defines a fixed extraction schema so Box AI returns the same clauses in the same shape for every document. It uses **Box AI Extract** (`POST /2.0/ai/extract_structured`) with confidence scores and source references enabled, scores each clause with a small, transparent rule set, and uploads the result as JSON and markdown next to the original.
+It takes a structured, repeatable approach: **extract, don't prompt.** Instead of asking a model open-ended questions, it defines a fixed extraction schema so Box AI returns the same clauses in the same shape for every document. It uses **Box AI Extract** (`POST /2.0/ai/extract_structured`) with confidence scores and source references enabled, scores each clause with a small, transparent rule set, and uploads the result as JSON and markdown next to the original.
 
 This is the companion repository to the tutorial [Build an NDA risk summary with Box AI Extract](https://developer.box.com/tutorials/nda-risk-summary).
 
